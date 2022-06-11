@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">  <!-- 命名空间：th ; url：www.thymeleaf.org a-->
+<head>
+    <title>Users</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="/css/chat.css">
+
+</head>
+<body>
+<header>header</header>   <!-- 显示用户列表 页面   admin/users-->
+<nav>nav</nav>
+<div class="content">
+    <aside>aside</aside>
+    <main>
+        <form action="#" th:action="@{/admin/users/add}" th:object="${user}" method="post">
+            <p>Nom <input type="text" th:field="*{lastName}" /></p>
+            <p>Prenom <input type="text" th:field="*{firstName}" /></p>
+            <p>email <input type="text" th:field="*{mail}" /></p>
+            <p>password <input type="text" th:field="*{password}" /></p>
+            <p><input type="submit" value="Enregistrer" /></p>
+        </form>
+    </main>
+</div>
+<footer>footer</footer>
+</body>
+</html>

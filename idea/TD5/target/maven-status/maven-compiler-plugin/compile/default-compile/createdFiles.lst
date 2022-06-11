@@ -1,0 +1,14 @@
+fr\utc\sr03\chat\ChatApplication.class
+fr\utc\sr03\chat\model\ChatRoom.class
+fr\utc\sr03\chat\controller\WSController.class
+fr\utc\sr03\chat\testWebSocket\ChatServer$EndpointConfigurator.class
+fr\utc\sr03\chat\controller\LoginController.class
+fr\utc\sr03\chat\dao\UCRepository.class
+fr\utc\sr03\chat\dao\ChatRepository.class
+fr\utc\sr03\chat\model\User.class
+fr\utc\sr03\chat\controller\AdminController.class
+fr\utc\sr03\chat\testWebSocket\ServiceEcho.class
+fr\utc\sr03\chat\dao\UserRepository.class
+fr\utc\sr03\chat\model\UC.class
+fr\utc\sr03\chat\controller\TestController.class
+fr\utc\sr03\chat\testWebSocket\ChatServer.class

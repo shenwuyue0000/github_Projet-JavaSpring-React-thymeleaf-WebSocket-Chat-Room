@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TD6</title>
+    <!-- Bootstrap 5  Autre framework css interessant Metro: https://metroui.org.ua/intro.html -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/js/td.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>SR03 - Projet - ChatRoom </h1>
+    </header>
+    <!-- Nav bar bootstrap 5 : https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Page 2</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Page 3</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Page 4</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-8">
+
+        </div>
+
+        <div >
+            <aside th:object="${user_bd}">
+
+                <div th:text="'id: '+${user_bd.get(0).getId()}"></div>
+                <div th:text="'firstName: '+${user_bd.get(0).getFirstName()}"></div>
+                <div th:text="'lastName: '+${user_bd.get(0).getLastName()}"></div>
+                <div th:text="'mail: '+${user_bd.get(0).getMail()}"></div>
+                <div th:text="'password: '+${user_bd.get(0).getPassword()}"></div>
+                <div th:text="'admin: '+${user_bd.get(0).isAdmin()}"></div>
+            </aside>
+        </div>
+
+        <!-- Datatables bootstrap 5 : https://datatables.net/examples/styling/bootstrap5.html -->
+
+    </div>
+    <div class="row">
+
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead>
+            <tr>
+                <th>id</th>
+                <th>temps_debut</th>
+                <th>temps_fin</th>
+                <th>nb_users</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="chat : ${chats}">
+                <td ><a th:href="@{'http://localhost:3000/?roomID='+ ${chat.getId()} +'&userID=' + ${user_bd.get(0).getId()} }" target="_blank" th:text="${chat.getId()}"></a></td>
+                <td th:text="${chat.getTemps_debut()}">System Architect</td>
+                <td th:text="${chat.getTemps_fin()}">Edinburgh</td>
+                <td th:text="${chat.getNb_users()}">61</td>
+
+            </tr>
+
+
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>id</th>
+                <th>temps_debut</th>
+                <th>temps_fin</th>
+                <th>nb_users</th>
+
+            </tr>
+            </tfoot>
+        </table>
+
+    </div>
+
+    <footer style=" margin-top: 40px;">
+        <p>Songyang WANG - <a href="mailto:songyang.wang@utc.fr">songyang.wang@utc.fr</a></p>
+        <p>Qiaodan SHEN - <a href="mailto:qiaodan.shen@utc.fr">qiaodan.shen@utc.fr</a></p>
+    </footer>
+</div>
+</body>
+</html>
