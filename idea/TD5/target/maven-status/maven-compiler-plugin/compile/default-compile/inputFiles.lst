@@ -1,6 +1,8 @@
 D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\dao\UCRepository.java
+D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\controller\MyWebSecurityConfig.java
 D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\controller\AdminController.java
 D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\controller\WSController.java
+D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\controller\UtilisateurController.java
 D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\dao\ChatRepository.java
 D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\ChatApplication.java
 D:\IDEA\TD5\src\main\java\fr\utc\sr03\chat\model\User.java

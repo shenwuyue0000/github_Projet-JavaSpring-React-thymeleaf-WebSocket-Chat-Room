@@ -6,13 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="2d89830c-3675-4fc9-916c-8103b8695127" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +78,11 @@
       <workItem from="1653048332504" duration="603000" />
       <workItem from="1653049138254" duration="3187000" />
       <workItem from="1654260059126" duration="3741000" />
-      <workItem from="1654439524411" duration="8237000" />
+      <workItem from="1654439524411" duration="8843000" />
+      <workItem from="1654801923885" duration="12036000" />
+      <workItem from="1654859019668" duration="2080000" />
+      <workItem from="1654950226486" duration="2296000" />
+      <workItem from="1655047803808" duration="203000" />
     </task>
     <servers />
   </component>

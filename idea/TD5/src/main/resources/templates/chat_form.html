@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">  <!-- 命名空间：th ; url：www.thymeleaf.org a-->
+<head>
+  <title>Chats</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" href="/css/chat.css">
+
+</head>
+<body>
+<header style="text-align: center; ">SR03 - Projet - ChatRoom</header>   <!-- 显示用户列表 页面   admin/users-->
+<nav style="text-align: center; ">Add Chat</nav>
+<div class="content" style="margin-left: 20px; ">
+  <aside>Formulaire</aside>
+  <main>
+    <form action="#" th:action="@{'/admin/chats/add?id=' + ${chat.getProprietaire()}  }" th:object="${chat}" method="post">
+
+      <p>Temps_Debut <input type="text" th:field="*{tempsDebut}" /></p>
+      <p>Temps_Fin <input type="text" th:field="*{tempsFin}" /></p>
+      <p>Nb_Users <input type="text" th:field="*{nbUsers}" /></p>
+      <p>proprietaire <input readonly="readonly" type="text" th:field="*{proprietaire}" /></p>
+
+      <p><input type="submit" value="Enregistrer" /></p>
+    </form>
+  </main>
+</div>
+<footer class="content" style="margin-left: 20px; ">Formulaire</footer>
+</body>
+</html>

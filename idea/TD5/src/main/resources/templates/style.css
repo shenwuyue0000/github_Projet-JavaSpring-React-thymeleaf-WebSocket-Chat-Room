@@ -1,0 +1,46 @@
+header{
+    min-height: 100px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+}
+
+nav
+{
+    min-height: 50px;
+    margin: 10px;
+}
+
+section{
+    min-height: 200px;
+    background-color: cornflowerblue;
+    margin: 10px;
+}
+
+article{
+    min-height: 200px;
+    background-color: cornsilk;
+    margin: 10px;
+}
+
+aside{
+    min-height: 410px;
+    background-color: bisque;
+    margin: 10px;
+}
+
+footer
+{
+    margin: 10px;
+    text-align: right;
+}
+
+.paginate_button
+{
+    padding: 10px;
+    border:1px solid #dddddd;
+}
+
+
+
+
